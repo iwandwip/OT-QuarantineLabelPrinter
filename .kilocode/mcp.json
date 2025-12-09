@@ -1,0 +1,71 @@
+{
+    "mcpServers": {
+        "context7": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@upstash/context7-mcp"
+            ],
+            "env": {
+                "DEFAULT_MINIMUM_TOKENS": ""
+            },
+            "alwaysAllow": [
+                "resolve-library-id",
+                "get-library-docs"
+            ]
+        },
+        "sequentialthinking": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-sequential-thinking"
+            ]
+        },
+        "shadcn": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "shadcn@latest",
+                "mcp"
+            ],
+            "alwaysAllow": [
+                "get_project_registries",
+                "list_items_in_registries",
+                "search_items_in_registries",
+                "view_items_in_registries",
+                "get_item_examples_from_registries",
+                "get_add_command_for_items",
+                "get_audit_checklist"
+            ]
+        },
+        "@magicuidesign/mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@magicuidesign/mcp@latest"
+            ]
+        },
+        "chrome-devtools": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "chrome-devtools-mcp@latest"
+            ],
+            "env": {}
+        },
+        "exa": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "exa-mcp-server"
+            ],
+            "env": {
+                "EXA_API_KEY": "26ab99ea-a679-4483-bc1f-360f599531b8"
+            },
+            "alwaysAllow": [
+                "get_code_context_exa",
+                "web_search_exa"
+            ]
+        }
+    }
+}
